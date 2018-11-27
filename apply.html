@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="hotbeanslogo.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hot Beans Web: Apply</title>
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hot Beans Web Design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active bold" href="apply.html">Apply</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-3">
+      <form class="form-horizontal" id="form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Application Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="firstname">Firstname</label>  
+  <div class="col-md-4">
+  <input id="firstname" name="firstname" type="text" placeholder="John" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="lastname" name="lastname" type="text" placeholder="Doe" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="gender">Gender</label>
+  <div class="col-md-4">
+    <select id="gender" name="gender" class="form-control">
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Other</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="experience">Please select what you have prior experience with</label>
+  <div class="col-md-4">
+    <select id="experience" name="experience" class="form-control" multiple="multiple">
+      <option value="">Java</option>
+      <option value="">HTML</option>
+      <option value="">C</option>
+      <option value="">jQuery</option>
+      <option value="">PHP</option>
+      <option value="">SQLite</option>
+      <option value="">Json</option>
+      <option value="">Linux</option>
+      <option value="">Windows</option>
+      <option value="">iOS</option>
+      <option value="">Android</option>
+      <option value="">Ubuntu</option>
+      <option value="">Mac</option>
+      <option value="">WordPress</option>
+      <option value="">Eclipse</option>
+      <option value="">MySql</option>
+      <option value="">CSS</option>
+      <option value="">JavaScript</option>
+      <option value="">C++</option>
+      <option value="">Python</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lang">Languages</label>  
+  <div class="col-md-4">
+  <input id="lang" name="lang" type="text" placeholder="English" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="personalsite">Personal Site</label>  
+  <div class="col-md-4">
+  <input id="personalsite" name="personalsite" type="text" placeholder="" class="form-control input-md">
+  <span class="help-block">If you have your own website/portfolio</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="currwork">Are you currently working?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="currwork-0">
+      <input type="radio" name="currwork" id="currwork-0" value="1" checked="checked">
+      Yes
+    </label>
+  </div>
+  <div class="radio">
+    <label for="currwork-1">
+      <input type="radio" name="currwork" id="currwork-1" value="2">
+      No
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prevexp">Sites samples of your abilities with explanation of your participation in each one</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="prevexp" name="prevexp"></textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="social">List your social sites</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="social" name="social"></textarea>
+  </div>
+</div>
+
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email Address</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="email" name="email" class="form-control" placeholder="" type="text" required="">
+    </div>
+    
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cv">Digital CV</label>
+  <div class="col-md-4">
+    <input id="cv" name="cv" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-success">Submit Form</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+      
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+      
+    </script>
+    <script src="tooltip.js">
+      
+    </script>
+  </body>
+</html>
