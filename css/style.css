@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #222222 !important;
+  color: #FFFFFF !important;
+  padding: 0px !important;
+  height: 50px !important;
+  margin-top: 0px !important;
+}
+.navbar-brand {
+  margin-left: 5px !important;
+  color: #FFFFFF !important;
+}
+.navbar-expand-lg {
+  color: #FFFFFF !important;
+}
+.navbar-light {
+  color: #FFFFFF !important;
+}
+.dropdown-menu {
+  background-color: #222222 !important;
+}
+a.dropdown-item:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.jumbotron {
+  height: 350px;
+  margin-bottom: 0px;
+  background-image: url(https://wallpapersite.com/images/wallpapers/code-3769x2513-program-programming-language-coding-java-4k-4192.jpg);
+}
+
+.infobox {
+  border-style: solid;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 300px;
+}
+.coursebox {
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 20px;
+  height: 250px;
+}
+.right {
+  float: right;
+  margin-right: 37px;
+  margin-bottom: 10px;
+}
+.icon {
+  height: 200px;
+  width: auto;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.footer-copyright {
+  clear: both !important;
+  margin-top: 50px !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 75px !important;
+  background-color: #222222 !important;
+  color: white !important;
+  text-align: center !important;
+}
