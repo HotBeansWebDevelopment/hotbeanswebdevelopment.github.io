@@ -48,15 +48,6 @@
             <li class="nav-item">
               <a class="nav-link contact" href="contact.html">Contact</a>
             </li>
-             <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Language
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#" onclick="English()">English</a>
-                            <a class="dropdown-item" href="#" onclick="French()">French</a>
-                            <a class="dropdown-item" href="#" onclick="Japanese()">Japanese</a>
-                        </div>
-</li>
           </ul>
         </div>
       </div>
@@ -131,6 +122,12 @@
     <footer class="py-5 bg-dark full-width">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; HotBeans Web Development & Design 2018</p>
+        <div id="google_translate_element"></div>
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
       </div>
       <!-- /.container -->
     </footer>
