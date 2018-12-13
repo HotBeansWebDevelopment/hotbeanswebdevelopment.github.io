@@ -13,6 +13,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  
 </head>
   <body>
     <!-- Jumbotron -->
@@ -31,10 +32,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Careers.html">Careers</a>
+              <a class="nav-link" href="about.html">Our Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="courses.html">Courses</a>
@@ -49,6 +47,11 @@
         </div>
       </div>
     </nav>
+        <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Application Form</h1>      
+  </div>
+</div>
     <div class="container-fluid bg-3">
       <form class="form-horizontal" id="form">
 <fieldset>
@@ -213,20 +216,18 @@
       </div>
       <!-- /.container -->
     </footer>
-    <script>
+    <script type="text/javascript">
+  var hook = true;
+  window.onbeforeunload = function() {
+    if (hook) {
 
-  $('#form').submit(function(e){
-    e.preventDefault();
-
-    // do ajax now
-    toastr.success('Hi! I am success message.');
-    window.setTimeout(partB, 5000);
-    })
-    function partB() {
-      location.reload();
+      return "Did you save your stuff?"
     }
-    </script>
-
+  }
+  function unhook() {
+    hook=false;
+  }
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

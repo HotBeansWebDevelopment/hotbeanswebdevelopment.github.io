@@ -31,11 +31,8 @@
               <a class="nav-link" href="index.html">Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="careers.html">Careers</a>
+              <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="courses.html">Courses</a>
@@ -50,6 +47,57 @@
         </div>
       </div>
     </nav>
+    <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Contact Form</h1>      
+  </div>
+</div>
+  
+<div class="container-fluid bg-3">    
+  <form class="form-horizontal" action="https://formspree.io/51464@eastnorfolk.ac.uk" method="POST">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email Address</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="sombody@example.co.uk" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="projdet">Message</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="projdet" name="projdet"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" value="Send" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
 
     <footer class="py-5 bg-dark full-width">
       <div class="container">
@@ -71,5 +119,17 @@
     <script src="tooltip.js">
       
     </script>
+        <script type="text/javascript">
+  var hook = true;
+  window.onbeforeunload = function() {
+    if (hook) {
+
+      return "Did you save your stuff?"
+    }
+  }
+  function unhook() {
+    hook=false;
+  }
+</script>
   </body>
 </html>

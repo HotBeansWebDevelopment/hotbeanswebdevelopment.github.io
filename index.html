@@ -25,32 +25,38 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="Logo.png" class="Logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="Logo.png" class="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link Home" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link about" href="about.html">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Careers.html">Careers</a>
+              <a class="nav-link courses" href="courses.html">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="courses.html">Courses</a>
+              <a class="nav-link apply" href="apply.html">Apply</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bold" href="apply.html">Apply</a>
+              <a class="nav-link contact" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link bold" href="contact.html">Contact</a>
-            </li>
+             <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Language
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" onclick="English()">English</a>
+                            <a class="dropdown-item" href="#" onclick="French()">French</a>
+                            <a class="dropdown-item" href="#" onclick="Japanese()">Japanese</a>
+                        </div>
+</li>
           </ul>
         </div>
       </div>
@@ -64,9 +70,9 @@
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-4">
-          <h1>Hot Beans Web Development & Design</h1>
-          <p>We are a small business focused on web design & development, we have a small team of free lancers who have a lot of experience with different development languages. Find out more about our team <a class="link" href="Careers.html">here.</p>
-          <a class="btn btn-primary btn-lg" href="contact.html">Contact Us!</a>
+          <h1 class="title">Hot Beans Web Development & Design</h1>
+          <p class="desc">We are a small business focused on web design & development, we have a small team of free lancers who have a lot of experience with different development languages. Find out more about our team <a class="link herelink" href="Careers.html">here.</a></p>
+          <a class="btn btn-primary btn-lg contactus" href="contact.html">Contact Us!</a>
         </div>
         <!-- /.col-md-4 -->
       </div>
@@ -75,7 +81,7 @@
       <!-- Call to Action Well -->
       <div class="card text-white bg-secondary my-4 text-center">
         <div class="card-body">
-          <p class="text-white m-0">We are currently hiring! <a class="link" href="apply.html">Click Here</a> to find out more</p>
+          <p class="text-white m-0 hire">We are currently hiring! <a class="link applylink" href="apply.html">Click Here</a> to find out more</p>
         </div>
       </div>
 
@@ -112,7 +118,7 @@
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title">Knowledge</h2>
-              <p class="card-text">Our team have a wide knowledge of web design techniques and languages that should be able to cover your needs, from JQeury to Bootstrap to PHP, for a full list of our teams skills please check out our <a class="link" href="Careers.html">Careers Page Here</p>
+              <p class="card-text">Our team have a wide knowledge of web design techniques and languages that should be able to cover your needs, from JQeury to Bootstrap to PHP, for a full list of our teams skills please check out our <a class="link" href="about.html">Careers Page Here</p>
             </div>
             <div class="card-footer">
               <a href="Careers.html" class="btn btn-primary">Careers Page</a>
@@ -139,6 +145,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/lang.js"></script>
 </body>
 
 </html>

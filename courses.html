@@ -33,10 +33,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="careers.html">Careers</a>
+              <a class="nav-link" href="about.html">Our Team</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Courses</a>
@@ -71,7 +68,7 @@
               <p class="card-text">W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.</p>
             </div>
             <div class="card-footer">
-              <a href="https://www.w3schools.com/" target="_blank" class="btn btn-primary">Find Out More!</a>
+              <a onclick="W3()" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
         </div>
@@ -84,7 +81,7 @@
               <p class="card-text">Learn the technical skills you need for the job you want. As leaders in online education and learning to code, we've taught over 45 million people.</p>
             </div>
             <div class="card-footer">
-              <a href="https://www.codecademy.com/" target="_blank" class="btn btn-primary">Find Out More!</a>
+              <a onclick="CA()" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
         </div>
@@ -97,7 +94,7 @@
               <p class="card-text">You can learn anything. Expert-created content and resources for every course and level. Always free. <br> Forever</p>
             </div>
             <div class="card-footer">
-              <a href="https://www.khanacademy.org/" class="btn btn-primary">Find Out More!</a>
+              <a onclick="KA()" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
         </div>
@@ -110,7 +107,7 @@
               <p class="card-text">Our C++ tutorial covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, objects, inheritance, and polymorphism.</p>
             </div>
             <div class="card-footer">
-              <a href="https://www.sololearn.com/" class="btn btn-primary">Find Out More!</a>
+              <a onclick="SL()" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
         </div>
@@ -141,5 +138,40 @@
     <script src="tooltip.js">
       
     </script>
+      <script>
+    function W3() {
+      if (confirm("You are about to open a tab to a third-party website, this website may be down but we cannot give support for it.    ")) {
+        window.open('https://www.w3schools.com/', '_blank');
+      }
+      else {
+        //do nothing
+      }
+    }
+    function CA() {
+      if (confirm("You are about to open a tab to a third-party website, this website may be down but we cannot give support for it.    ")) {
+        window.open('https://www.codecademy.com/', '_blank');
+      }
+      else {
+        //do nothing
+      }
+    }
+    function KA() {
+      if (confirm("You are about to open a tab to a third-party website, this website may be down but we cannot give support for it.    ")) {
+        window.open('https://www.khanacademy.org/', '_blank');
+      }
+      else {
+        //do nothing
+      }
+    }
+    function SL() {
+      if (confirm("You are about to open a tab to a third-party website, this website may be down but we cannot give support for it.    ")) {
+        window.open('https://www.sololearn.com/', '_blank');
+      }
+      else {
+        //do nothing
+      }
+    }
+
+  </script>
   </body>
 </html>
