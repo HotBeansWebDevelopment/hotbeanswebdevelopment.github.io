@@ -13,9 +13,26 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
   
 </head>
-  <body>
+  <body onload="startTime()">
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid jumbolife">
     </div>
@@ -43,6 +60,10 @@
             <li class="nav-item">
               <a class="nav-link bold" href="contact.html">Contact</a>
             </li>
+            <li class="txt" id="txt"></li>
+            <li class="nav-item">
+              <a class="nav-link rndm" id="rndm">Random Quote</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -53,7 +74,7 @@
   </div>
 </div>
     <div class="container-fluid bg-3">
-      <form class="form-horizontal" id="form">
+      <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
@@ -177,7 +198,7 @@
   <label class="col-md-4 control-label" for="email">Email Address</label>
   <div class="col-md-4">
     <div class="input-group">
-      <input id="email" name="email" class="form-control" placeholder="" type="text" required="">
+      <input id="email" name="email" class="form-control email" placeholder="" type="text" required="">
     </div>
     
   </div>
@@ -201,7 +222,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-success">Submit Form</button>
+    <button id="submit" class="btn btn-success">Submit Form</button>
   </div>
 </div>
 
@@ -227,7 +248,72 @@
   function unhook() {
     hook=false;
   }
+  $("#submit-btn").click(function(){
+            // Setup varibale to store error message
+            var errMsg = "";
+            
+            // If No Email address 
+            if($("#email").val() == ""){
+                // Add message, include line break
+                errMsg += "    an Email address\r\n";
+            } else if(!isEmail($("#email").val())) { // Must be some content test to see if valid
+                errMsg += "    a valid Email address\r\n";;
+            }
+            // If No Password
+            if($("#password").val() == ""){
+                errMsg += "    a Password\r\n";
+            } else if($("#password").val().length < 8) { // There must be a password, check length
+                errMsg += "    a Password with at least 8 characters\r\n";
+            }
+            
+            // Test to see if error message contains an error
+            if (errMsg != ""){
+                alert("Please Ensure you include:\r\n" + errMsg);
+            } else { // No Errors
+                alert("Your Message has been sent");
+            }
+        });
 </script>
+  <script> 
+    $( "#rndm" ).click(function() {
+      qoutes = [];
+      authors = [];
+      qoutes[0] = "Talk is cheap. Show me the code.";
+      authors[0] = "― Linus Torvalds";
+      qoutes[1] = "Programs must be written for people to read, and only incidentally for machines to execute.";
+      authors[1] = "― Harold Abelson, Structure and Interpretation of Computer Programs";
+      qoutes[2] = "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live";
+      authors[2] = "― John Woods";
+      qoutes[3] = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.";
+      authors[3] = "― Rick Cook";
+      qoutes[4] = "The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly. A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts, to communicate the way that an algorithm works and to convince a reader that the results will be correct.";
+      authors[4] = "― Donald E. Knuth";
+      qoutes[5] = "That's the thing about people who think they hate computers. What they really hate is lousy programmers.";
+      authors[5] = "― Larry Niven";
+      qoutes[6] = "Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.";
+      authors[6] = "― Muhammad Waseem";
+      qoutes[7] = "I'm not a great programmer; I'm just a good programmer with great habits.";
+      authors[7] = "― Kent Beck";
+      qoutes[8] = "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.";
+      authors[8] = "― Martin Fowler";
+      qoutes[9] = "Truth can only be found in one place: the code.";
+      authors[9] = "― Robert C. Martin";
+      qoutes[10] = "A language that doesn't affect the way you think about programming is not worth knowing.";
+      authors[10] = "― Alan J. Perlis";
+      qoutes[11] = "Walking on water and developing software from a specification are easy if both are frozen.";
+      authors[11] = "― Edward V. Berard";
+      qoutes[12] = "The most disastrous thing that you can ever learn is your first programming language.";
+      authors[12] = "― Alan Kay";
+      qoutes[13] = "The most important property of a program is whether it accomplishes the intention of its user.";
+      authors[13] = "― C.A.R. Hoare";
+      qoutes[14] = "Object-oriented programming offers a sustainable way to write spaghetti code. It lets you accrete programs as a series of patches.";
+      authors[14] = "― Paul Graham";
+
+      index = Math.floor(Math.random() * qoutes.length);
+
+      alert(qoutes[index] + " " + authors[index]);
+    });
+  </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

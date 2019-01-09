@@ -99,16 +99,35 @@ a.dropdown-item:hover {
 .greg {
   background-size: auto;
   background-image: url(https://businesshealthservices.co.nz/wp-content/uploads/2016/11/generic-man.jpg);
+  display: inline-block;
 }
 .dave {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/41GerqiDoTL.jpg);
-    background-size: 175px;
+    background-image: url(https://static.tvtropes.org/pmwiki/pub/images/Sakurai_745.jpg);
+    background-size: 250px;
+    display: inline-block;
 }
 .susan {
     background-image: url(https://specials-images.forbesimg.com/imageserve/59f23ffa31358e542c044d9a/416x416.jpg?&cropX1=1001&cropX2=2035&cropY1=216&cropY2=1250);
     background-size: 200px;
+    display: inline-block;
 }
 .jake {
   background-image: url(https://pmcvariety.files.wordpress.com/2017/03/hideo-kojima-tribeca-games-festival.jpg?w=1000&h=563&crop=1);
   background-size: 355px;
+  display: inline-block;
+}
+.txt {
+  margin-left: 0px;
+  margin-top: 8px;
+}
+
+.floaty {
+  float: right;
+  width: 75%;
+  display: inline;
+  margin-top: 0px;
+}
+
+.textleft {
+  padding-top: 5px;
 }
